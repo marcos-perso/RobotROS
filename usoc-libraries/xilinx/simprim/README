@@ -1,0 +1,38 @@
+=====================README========================
+This README file was added to this directory to explain the addition of 
+the following files:
+simprim_VITAL_mti.vhd
+simprim_Vcomponents_mti.vhd
+simprim_Vpackage_mti.vhd
+simprim_SMODEL_mti.vhd
+
+In software releases prior to the 6.1i software, these files did not 
+exist.  These files have been added to this release to workaround an 
+issue with mapping to the Vital2000 library.  ModelTech compiles 
+Vital2000 into a separate Vital2000 library. All of the other supported
+simulators compile Vital2000 into the IEEE library.
+
+The 6.1i SIMPRIM models use Vital2000 constructs and therefore the 
+SIMPRIM models must call the Vital2000 library.  In order to call the 
+Vital2000 library for ModelSim, the following library declarations must 
+be used:
+Library VITAL2000;
+use VITAL2000.VITAL_Primitives.all
+use VITAL2000.VITAL_Timing.all
+
+For all of the other supported simulators, the following declarations are 
+used:
+Library IEEE;
+use IEEE.VITAL_Primitives.all
+use IEEE.VITAL_Timing.all
+
+It was therefore necessary to create a separate set of libraries for 
+ModelSim.  Except for the Library declarations shown above, the "_mti" 
+files are identical to the corresponding files without the "_mti".
+
+COMPXLIB will automatically compile the "_mti" files when ModelSim is 
+selected as the simulator and will use the other files when any 
+other simulator is selected.  If compiling the models manually, the 
+"_mti" files must be used with the ModelSim simulator and the other 
+files are used for any other simulator.
+=====================================================

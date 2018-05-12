@@ -1,0 +1,297 @@
+<!DOCTYPE FTML SYSTEM "ftml.dtd">
+<FTML><HEAD><TITLE>FMF Timing for s29gl032n Parts</TITLE>
+<BODY>
+<REVISION.HISTORY>
+version: |   author:     | mod date: | changes made:
+  V1.0     I.Milutinovic   07 Mar 07    Initial release
+
+</REVISION.HISTORY>
+<TIMESCALE>1ns</TIMESCALE>
+<MODEL>s29gl032n
+<FMFTIME>
+S29GL032N70TAIR1<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TAIR2<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TAI01<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TAI02<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TFIR1<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TFIR2<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TFI01<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TFI02<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FAIR1<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FAIR2<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FAI01<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FAI02<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FFIR1<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FFIR2<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FFI01<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FFI02<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TAIR3<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TAIR4<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TAI03<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TAI04<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TFIR3<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TFIR4<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TFI03<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70TFI04<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70BAIR3<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70BAIR4<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70BAI03<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70BAI04<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70BFIR3<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70BFIR4<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70BFI03<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70BFI04<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FAIR3<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FAIR4<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FAI03<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FAI04<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FFIR3<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FFIR4<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FFI03<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N70FFI04<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+<COMMENT>The values listed are for VCC=2.7V to 3.6V, Ta=-40 to +85 Celsius, CL = 30 pF</COMMENT>
+<TIMING>
+  (DELAY (ABSOLUTE
+    (IOPATH A0 DQ0 (24:46:70) (24:46:70))
+    (IOPATH A0 DQ1 (8:17:25) (8:17:25))
+    (IOPATH CENeg DQ0 (24:46:70) (24:46:70) (8:17:25) (24:46:70) (8:17:25) (24:46:70))
+    (IOPATH OENeg DQ0 (8:17:25) (8:17:25) (8:17:25) (8:17:25) (8:17:25) (8:17:25))
+    (IOPATH RESETNeg DQ0 () () (0:0:0) () (0:0:0) ())
+    (IOPATH CENeg RY (0) (70))
+    (IOPATH WENeg RY (0) (70))
+  ))
+  (TIMINGCHECK
+    (SETUP A0 CENeg (0))
+    (SETUP A0 OENeg (15))
+    (SETUP DQ0 CENeg (45))
+    (HOLD CENeg RESETNeg (50))
+    (HOLD OENeg WENeg (0))
+    (HOLD A0 CENeg (45))
+    (HOLD A0 OENeg (0))
+    (HOLD DQ0 CENeg (0))
+    (HOLD WENeg OENeg (0))
+    (WIDTH (negedge RESETNeg) (500))
+    (WIDTH (posedge OENeg) (20))
+    (WIDTH (negedge WENeg) (35))
+    (WIDTH (posedge WENeg) (30))
+    (WIDTH (negedge CENeg) (35))
+    (WIDTH (COND RY==1 (posedge CENeg)) (30))
+    (WIDTH (COND RY==0 (posedge CENeg)) (20))
+    (WIDTH (negedge A0) (70))
+  ))
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/WBPB) (DELAY (ABSOLUTE (DEVICE(5000:7500:10000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/POW) (DELAY (ABSOLUTE (DEVICE(30000:60000:90000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/SEO) (DELAY (ABSOLUTE (DEVICE(500000000:500000000:15e9) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/HANG) (DELAY (ABSOLUTE (DEVICE(400000000:400000000:400000000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/START_T1) (DELAY (ABSOLUTE (DEVICE(5000:5000:20000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/CTMOUT) (DELAY (ABSOLUTE (DEVICE(50000:50000:50000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/READY) (DELAY (ABSOLUTE (DEVICE(20000:20000:20000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/UNLOCK) (DELAY (ABSOLUTE (DEVICE(2000:2000:2000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/PPBLOCK) (DELAY (ABSOLUTE (DEVICE(100:100:100) ) ) )
+</TIMING></FMFTIME>
+<FMFTIME>
+S29GL032N90TAIR1_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAIR2_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAI01_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAI02_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIR1_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIR2_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFI01_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFI02_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIR1_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIR2_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAI01_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAI02_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIR1_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIR2_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFI01_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFI02_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAIR3_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAIR4_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAI03_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAI04_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIR3_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIR4_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFI03_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFI04_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BAIR3_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BAIR4_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BAI03_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BAI04_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BFIR3_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BFIR4_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BFI03_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BFI04_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIR3_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIR4_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAI03_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAI04_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIR3_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIR4_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFI03_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFI04_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAIV1_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAIV2_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIV1_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIV2_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIV1_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIV2_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIV1_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIV2_3V<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+<COMMENT>The values listed are for VCC=2.7V to 3.6V, Vio=3V, Ta=-40 to +85 Celsius, CL = 30 pF</COMMENT>
+<TIMING>
+  (DELAY (ABSOLUTE
+    (IOPATH A0 DQ0 (30:60:90) (30:60:90))
+    (IOPATH A0 DQ1 (8:17:25) (8:17:25))
+    (IOPATH CENeg DQ0 (30:60:90) (30:60:90) (8:17:25) (30:60:90) (8:17:25) (30:60:90))
+    (IOPATH OENeg DQ0 (8:17:25) (8:17:25) (8:17:25) (8:17:25) (8:17:25) (8:17:25))
+    (IOPATH RESETNeg DQ0 () () (0:0:0) () (0:0:0) ())
+    (IOPATH CENeg RY (0) (90))
+    (IOPATH WENeg RY (0) (90))
+  ))
+  (TIMINGCHECK
+    (SETUP A0 CENeg (0))
+    (SETUP A0 OENeg (15))
+    (SETUP DQ0 CENeg (45))
+    (HOLD CENeg RESETNeg (50))
+    (HOLD OENeg WENeg (0))
+    (HOLD A0 CENeg (45))
+    (HOLD A0 OENeg (0))
+    (HOLD DQ0 CENeg (0))
+    (HOLD WENeg OENeg (0))
+    (WIDTH (negedge RESETNeg) (500))
+    (WIDTH (posedge OENeg) (20))
+    (WIDTH (negedge WENeg) (35))
+    (WIDTH (posedge WENeg) (30))
+    (WIDTH (negedge CENeg) (35))
+    (WIDTH (COND RY==1 (posedge CENeg)) (30))
+    (WIDTH (COND RY==0 (posedge CENeg)) (20))
+    (WIDTH (negedge A0) (90))
+  ))
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/WBPB) (DELAY (ABSOLUTE (DEVICE(5000:7500:10000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/POW) (DELAY (ABSOLUTE (DEVICE(30000:60000:90000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/SEO) (DELAY (ABSOLUTE (DEVICE(500000000:500000000:15e9) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/HANG) (DELAY (ABSOLUTE (DEVICE(400000000:400000000:400000000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/START_T1) (DELAY (ABSOLUTE (DEVICE(5000:5000:20000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/CTMOUT) (DELAY (ABSOLUTE (DEVICE(50000:50000:50000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/READY) (DELAY (ABSOLUTE (DEVICE(20000:20000:20000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/UNLOCK) (DELAY (ABSOLUTE (DEVICE(2000:2000:2000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/PPBLOCK) (DELAY (ABSOLUTE (DEVICE(100:100:100) ) ) )
+</TIMING></FMFTIME>
+</FTML>
+S29GL032N90TAIR1_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAIR2_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAI01_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAI02_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIR1_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIR2_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFI01_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFI02_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIR1_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIR2_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAI01_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAI02_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIR1_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIR2_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFI01_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFI02_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAIR3_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAIR4_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAI03_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAI04_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIR3_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIR4_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFI03_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFI04_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BAIR3_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BAIR4_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BAI03_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BAI04_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BFIR3_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BFIR4_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BFI03_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90BFI04_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIR3_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIR4_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAI03_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAI04_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIR3_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIR4_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFI03_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFI04_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAIV1_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TAIV2_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIV1_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90TFIV2_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIV1_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FAIV2_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIV1_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+S29GL032N90FFIV2_1V8<SOURCE>Spansion Publication Number S29GL-N_01_01 Revision Date February 9, 2007</SOURCE>
+<COMMENT>The values listed are for VCC=2.7V to 3.6V, Vio=1.8V, Ta=-40 to +85 Celsius, CL = 30 pF</COMMENT>
+<TIMING>
+  (DELAY (ABSOLUTE
+    (IOPATH A0 DQ0 (30:60:90) (30:60:90))
+    (IOPATH A0 DQ1 (10:20:30) (10:20:30))
+    (IOPATH CENeg DQ0 (30:60:90) (30:60:90) (8:17:25) (30:60:90) (8:17:25) (30:60:90))
+    (IOPATH OENeg DQ0 (10:20:30) (10:20:30) (8:17:25) (10:20:30) (8:17:25) (10:20:30))
+    (IOPATH RESETNeg DQ0 () () (0:0:0) () (0:0:0) ())
+    (IOPATH CENeg RY (0) (90))
+    (IOPATH WENeg RY (0) (90))
+  ))
+  (TIMINGCHECK
+    (SETUP A0 CENeg (0))
+    (SETUP A0 OENeg (15))
+    (SETUP DQ0 CENeg (45))
+    (HOLD CENeg RESETNeg (50))
+    (HOLD OENeg WENeg (0))
+    (HOLD A0 CENeg (45))
+    (HOLD A0 OENeg (0))
+    (HOLD DQ0 CENeg (0))
+    (HOLD WENeg OENeg (0))
+    (WIDTH (negedge RESETNeg) (500))
+    (WIDTH (posedge OENeg) (20))
+    (WIDTH (negedge WENeg) (35))
+    (WIDTH (posedge WENeg) (30))
+    (WIDTH (negedge CENeg) (35))
+    (WIDTH (COND RY==1 (posedge CENeg)) (30))
+    (WIDTH (COND RY==0 (posedge CENeg)) (20))
+    (WIDTH (negedge A0) (90))
+  ))
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/WBPB) (DELAY (ABSOLUTE (DEVICE(5000:7500:10000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/POW) (DELAY (ABSOLUTE (DEVICE(30000:60000:90000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/SEO) (DELAY (ABSOLUTE (DEVICE(500000000:500000000:15e9) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/HANG) (DELAY (ABSOLUTE (DEVICE(400000000:400000000:400000000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/START_T1) (DELAY (ABSOLUTE (DEVICE(5000:5000:20000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/CTMOUT) (DELAY (ABSOLUTE (DEVICE(50000:50000:50000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/READY) (DELAY (ABSOLUTE (DEVICE(20000:20000:20000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/UNLOCK) (DELAY (ABSOLUTE (DEVICE(2000:2000:2000) ) ) ) )
+  (CELL (CELLTYPE "VITALbuf")
+    (INSTANCE %LABEL%/PPBLOCK) (DELAY (ABSOLUTE (DEVICE(100:100:100) ) ) )
+</TIMING></FMFTIME>
+</BODY></FTML>

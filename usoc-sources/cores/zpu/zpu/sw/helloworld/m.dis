@@ -1,0 +1,31 @@
+BFD header file version 2.15
+elf32-zpu
+ (header big endian, data big endian)
+  zpu
+elf32-little
+ (header little endian, data little endian)
+  zpu
+elf32-big
+ (header big endian, data big endian)
+  zpu
+srec
+ (header endianness unknown, data endianness unknown)
+  zpu
+symbolsrec
+ (header endianness unknown, data endianness unknown)
+  zpu
+tekhex
+ (header endianness unknown, data endianness unknown)
+  zpu
+binary
+ (header endianness unknown, data endianness unknown)
+  zpu
+ihex
+ (header endianness unknown, data endianness unknown)
+  zpu
+
+               elf32-zpu elf32-little elf32-big srec symbolsrec tekhex binary 
+           zpu elf32-zpu elf32-little elf32-big srec symbolsrec tekhex binary 
+
+               ihex 
+           zpu ihex 

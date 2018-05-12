@@ -1,0 +1,16 @@
+[timestart] 0
+[size] 1024 744
+[pos] -1 -1
+*0.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.tb.
+@800022
+#{top.tb.i_dut.p_fl_addr[20:0]} top.tb.i_dut.p_fl_addr20 top.tb.i_dut.p_fl_addr19 top.tb.i_dut.p_fl_addr18 top.tb.i_dut.p_fl_addr17 top.tb.i_dut.p_fl_addr16 top.tb.i_dut.p_fl_addr15 top.tb.i_dut.p_fl_addr14 top.tb.i_dut.p_fl_addr13 top.tb.i_dut.p_fl_addr12 top.tb.i_dut.p_fl_addr11 top.tb.i_dut.p_fl_addr10 top.tb.i_dut.p_fl_addr9 top.tb.i_dut.p_fl_addr8 top.tb.i_dut.p_fl_addr7 top.tb.i_dut.p_fl_addr6 top.tb.i_dut.p_fl_addr5 top.tb.i_dut.p_fl_addr4 top.tb.i_dut.p_fl_addr3 top.tb.i_dut.p_fl_addr2 top.tb.i_dut.p_fl_addr1 top.tb.i_dut.p_fl_addr0
+@1001200
+-group_end
+@800022
+#{top.tb.i_dut.p_fl_dq[15:0]} top.tb.i_dut.p_fl_dq15 top.tb.i_dut.p_fl_dq14 top.tb.i_dut.p_fl_dq13 top.tb.i_dut.p_fl_dq12 top.tb.i_dut.p_fl_dq11 top.tb.i_dut.p_fl_dq10 top.tb.i_dut.p_fl_dq9 top.tb.i_dut.p_fl_dq8 top.tb.i_dut.p_fl_dq7 top.tb.i_dut.p_fl_dq6 top.tb.i_dut.p_fl_dq5 top.tb.i_dut.p_fl_dq4 top.tb.i_dut.p_fl_dq3 top.tb.i_dut.p_fl_dq2 top.tb.i_dut.p_fl_dq1 top.tb.i_dut.p_fl_dq0
+@1001200
+-group_end
+[pattern_trace] 1
+[pattern_trace] 0

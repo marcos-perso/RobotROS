@@ -1,0 +1,7 @@
+#########
+## FMF ##
+#########
+FMF_SOURCES = \
+$(FMF_SRC_DIR)/utilities/conversions.vhd  \
+$(FMF_SRC_DIR)/utilities/gen_utils.vhd 
+

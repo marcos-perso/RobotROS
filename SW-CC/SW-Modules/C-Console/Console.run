@@ -1,0 +1,5 @@
+#!
+export PATH=/mnt/Projects/Robot/tools/bin:${PATH}
+export LD_LIBRARY_PATH=/mnt/Projects/Robot/SW/lib:$LD_LIBRARY_PATH
+./Console.x
+
