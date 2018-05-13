@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/robot/robotROS/catkin_robotROS/devel -DCMAKE_INSTALL_PREFIX=/home/robot/robotROS/catkin_robotROS/install -G Unix Makefiles
