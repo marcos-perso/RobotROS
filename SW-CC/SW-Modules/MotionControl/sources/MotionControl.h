@@ -27,8 +27,6 @@
 #include "GenLib.h"
 #include "ITC.h"
 #include "MotionControlTypes.h"
-#include "SerialCommTypes.h"
-#include "SerialCommLibs.h"
 
 // ******************
 // *** PROTOTYPES ***

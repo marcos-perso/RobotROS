@@ -4,9 +4,10 @@
 
 # Makefile to generate ITC library
 
-######################
-## ENVIRONMENT INFO ##
-######################
+##############
+## INCLUDES ##
+##############
+include ../../../project.mak
 
 #####################
 ### COMPILER INFO ###

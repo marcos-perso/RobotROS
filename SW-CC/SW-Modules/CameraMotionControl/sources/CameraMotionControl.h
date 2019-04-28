@@ -25,8 +25,6 @@
 
 #include "Ports.h"
 #include "ITC.h"
-#include "SerialCommTypes.h"
-#include "SerialCommLibs.h"
 
 // ******************
 // *** PROTOTYPES ***

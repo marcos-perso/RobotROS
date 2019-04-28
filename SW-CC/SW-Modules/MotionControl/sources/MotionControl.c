@@ -81,13 +81,13 @@ int main(int argc, char ** argv) {
 	Data = Dir0 + GenLib::int_to_hex(Speed0_Int,6);
 	std::cout << "MOTOR0 : " << Data << std::endl;
 	Address = "2000400";
-	SERIALCOMMLIBS::WriteRegister(Address,Data);
+//	SERIALCOMMLIBS::WriteRegister(Address,Data);
 
 	// Set up the speed of motor 1
 	Data = Dir1 + GenLib::int_to_hex(Speed1_Int,6);
 	std::cout << "MOTOR1 : " << Data << std::endl;
 	Address = "2000401";
-	SERIALCOMMLIBS::WriteRegister(Address,Data);
+//	SERIALCOMMLIBS::WriteRegister(Address,Data);
 	
     }
 

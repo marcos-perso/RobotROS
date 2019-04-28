@@ -4,6 +4,11 @@
 
 # Makefile to generate library
 
+##############
+## Includes ##
+##############
+include ../../../project.mak
+
 ######################
 ## ENVIRONMENT INFO ##
 ######################
@@ -22,7 +27,8 @@ target_arch = -linux
 
 # Compilation flags
 C_FLAGS = -fpic -g -DDEBUG_ENVIA=1
-L_FLAGS = -shared -Wall,-soname,libmotioncontrollib.so -DDEBUG_ENVIA=1
+#L_FLAGS = -shared -Wall,-soname,libmotioncontrollib.so -DDEBUG_ENVIA=1
+L_FLAGS = -shared -DDEBUG_ENVIA=1
 DFLAGS = -MM
 
 ###########
@@ -34,7 +40,7 @@ DFLAGS = -MM
 ##################
 
 TOP = SerialCommLib
-PRJ_DIR = /mnt/Projects/Robot
+PRJ_DIR = $(ROBOT_HOME)
 LIB_FILE = libserialcommlib.so
 OUT_FILE = $(TOP).out
 RUN_FILE = $(TOP).x
@@ -43,7 +49,7 @@ DEP_FILE       = make.dep
 ######################
 ## ENVIRONMENT INFO ##
 ######################
-LIB_DIR = $(PRJ_DIR)/SW/lib
+LIB_DIR = $(PRJ_DIR)/SW-CC/lib
 
 
 #############

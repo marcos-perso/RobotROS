@@ -2,14 +2,14 @@
 ## DESCRIPTION ##
 #################
 
-# Makefile to generate java compilation
+# Makefile to launch ROS nodes
 
 
 #####################
 ## PROJECT INCLUDE ##
 #####################
 
-include ../../../project.mak
+include ../project.mak
 
 ########################
 ## COMPILATION TARGET ##
@@ -20,18 +20,16 @@ include ../../../project.mak
 # --> UBUNTU-RPI: Linux over RPI
 TARGET = UBUNTU-PC
 
-
 ##################
 ## PROJECT INFO ##
 ##################
 
 PRJ_DIR = $(ROBOT_HOME)
-TOP = JavaConsole
-RUN_FILE = $(TOP).class
 
 ######################
 ## ENVIRONMENT INFO ##
 ######################
+VERBOSE = 1
 
 #####################
 ### COMPILER INFO ###
@@ -96,42 +94,23 @@ commands:
 	@echo ""
 	@echo "$(HEAD) Available commands: $(TAIL)"
 	@echo
-	@echo "  INFO            : Shows compiling information"
 	@echo "  CLEAN           : Clean the database"
-	@echo "  COMPILE         : Compile the program"
-	@echo "  RUN             : Run the program"
+	@echo "  COMPILE         : Compile the ROS project"
+	@echo "  RUN             : Launch all ROS Nodes"
+	@echo "  KILL            : Kill ros nodes"
 	@echo ""
 
 #############
 ## ACTIONS ##
 #############
-
-INFO:
-	@echo " --- Compiler ---"
-	@echo $(JAVAC)
-	@echo $(JAVA)
-	@echo " --- Java classes (CLASS) ---"
-	@echo $(CLASS)
+KILL:
+	rosnode kill -a
+COMPILE:
+	catkin_make VERBOSE=$(VERBOSE)
 
 CLEAN:
-	@echo "Cleaning..."
-	@-\rm $(RUN_FILE)
+	catkin_make clean
 
-RUN: $(TOP).class
-	@echo "Running..."
-	$(JAVA) $(TOP)
-
-COMPILE: $(CLASS)
-	@echo "Compiling java classes"
-
-$(CLASS): $(SOURCES)
-	echo "Compiling $<..."
-	#$(JAVAC) $<  $@
-	$(JAVAC) -d . $<
-
-.PHONY: DEPEND
-
-## Include dependencies file
-ifeq ($(DEP_FILE), $(wildcard $(DEP_FILE)))
-include $(DEP_FILE)
-endif
+RUN:
+	@echo "Launching all nodes..."
+	roslaunch robot.launch

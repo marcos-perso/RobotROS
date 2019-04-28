@@ -16,6 +16,7 @@
 /* ************ */
 /* *** MAIN *** */
 /* ************ */
+using namespace ITC;
 
 int main(int argc, char *argv[])
 {

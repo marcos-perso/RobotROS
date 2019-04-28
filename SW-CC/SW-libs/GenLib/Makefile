@@ -4,6 +4,11 @@
 
 # Makefile to generate ITC library
 
+##############
+## INCLUDES ##
+##############
+include ../../../project.mak
+
 ######################
 ## ENVIRONMENT INFO ##
 ######################
@@ -120,6 +125,7 @@ CLEAN:
 LINK: $(OBJ)
 	@echo "Compiling C++ ..."
 	$(GXX) $(L_FLAGS) $(INCLUDE) $(LINCLUDE) $(OBJ) -o $(LIB_FILE) $(LIBS)
+	#cp libgenlib.so $(ROBOT_HOME)/SW-CC/lib/.
 
 $(OBJ): %.o :
 	echo "Compiling $<..."

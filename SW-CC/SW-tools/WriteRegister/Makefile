@@ -4,20 +4,25 @@
 
 # Makefile
 
+##############
+## INCLUDES ##
+##############
+include ../../../project.mak
+
 ##################
 ## PROJECT INFO ##
 ##################
 
-PRJ_DIR = /mnt/Projects/Robot
+PRJ_DIR = $(ROBOT_HOME)
 TOP = WriteRegister
 OUT_FILE = $(TOP).out
 RUN_FILE = $(TOP).x
-DEP_FILE       = make.dep
+DEP_FILE = make.dep
 
 ######################
 ## ENVIRONMENT INFO ##
 ######################
-LIB_DIR = $(PRJ_DIR)/SW/lib
+LIB_DIR = $(PRJ_DIR)/SW-CC/lib
 
 #####################
 ### COMPILER INFO ###

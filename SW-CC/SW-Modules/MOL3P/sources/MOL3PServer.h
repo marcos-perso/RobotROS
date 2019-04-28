@@ -41,6 +41,7 @@
 // *** PROJECT INCLUDES ***
 // ************************
 #include "Ports.h"
+#include "errno.h"
 //#include "ITC.h"
 //#include "MotionControlTypes.h"
 
@@ -49,6 +50,10 @@
 // ******************
 void error(const char *msg);
 
+// ******************
+// *** PROTOTYPES ***
+// ******************
+#define MAX_BUFF 256
 
 
 #endif

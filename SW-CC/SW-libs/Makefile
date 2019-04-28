@@ -79,17 +79,17 @@ DEPEND:
 	make -C ./Types DEPEND
 	make -C ./ITC DEPEND
 	make -C ./GenLib DEPEND
-	#make -C ./MotionControlLibs DEPEND
-	#make -C ./CameraMotionControlLibs DEPEND
-	#make -C ./SerialCommLibs DEPEND
+	make -C ./MotionControlLibs DEPEND
+	make -C ./CameraMotionControlLibs DEPEND
+	make -C ./SerialCommLibs DEPEND
 
 COMPILE:
 	@echo "Compiling libraries..."
 	make -C ./Types
 	make -C ./ITC
 	make -C ./GenLib
-	#make -C ./MotionControlLibs
-	#make -C ./CameraMotionControlLibs
-	#make -C ./SerialCommLibs
+	make -C ./MotionControlLibs
+	make -C ./CameraMotionControlLibs
+	make -C ./SerialCommLibs
 
 

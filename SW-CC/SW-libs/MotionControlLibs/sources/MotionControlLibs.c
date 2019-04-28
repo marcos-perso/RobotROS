@@ -14,6 +14,7 @@
 // **************
 // **** MAIN ****
 // **************
+using namespace GenLib;
 
 namespace MOTIONCONTROLLIBS
 {

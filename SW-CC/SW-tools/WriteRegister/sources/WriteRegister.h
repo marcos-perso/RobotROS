@@ -37,7 +37,6 @@
 // ************************
 // *** PROJECT INCLUDES ***
 // ************************
-#include "SerialCommLibs.h"
 
 // ******************
 // *** PROTOTYPES ***

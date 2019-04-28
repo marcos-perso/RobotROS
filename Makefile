@@ -47,10 +47,10 @@ commands:
 	@echo ""
 	@echo "$(HEAD) Available commands: $(TAIL)"
 	@echo
-	@echo "  CLEAN  	: Clean the database"
-	@echo "  STATUS 	: Shows status"
-	@echo "  STATUS_SHORT 	: Shows status"
-	@echo "  MERGE 		: Merge with master"
+	@echo "  CLEAN          : Clean the database"
+	@echo "  STATUS         : Shows status"
+	@echo "  STATUS_SHORT   : Shows status"
+	@echo "  MERGE          : Merge with master"
 	@echo ""
 
 #############

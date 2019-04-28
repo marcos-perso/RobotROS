@@ -32,11 +32,15 @@ int main(int argc, char *argv[])
   // -------------------
   
   // Socket Definitions
-  int sockfd, newsockfd, portno;
+  int sockfd, portno;
   socklen_t clilen;
-  char buffer[256];
   struct sockaddr_in serv_addr, cli_addr;
+
+  int newsockfd;
+  char buffer[MAX_BUFF];
   int NumberBytesRead;
+
+  bool SocketActive = true;
 
   // -------------------------
   // --- Create the socket ---
@@ -57,62 +61,89 @@ int main(int argc, char *argv[])
     error("ERROR on binding");
   listen(sockfd,5);
   clilen = sizeof(cli_addr);
+
+  // ---------------------------------------------
+  // --- Accept an incoming connection         ---
+  // --- Only the first connection is accepted ---
+  // ---------------------------------------------
+
   
-  // -------------------------------
-  // --- MAIN LOOP OF ACCEPTANCE ---
-  // -------------------------------
+  // -----------------
+  // --- MAIN LOOP ---
+  // -----------------
   while(1)
     { // MAIN loop
 
       // Accepting a socket conection
       printf("SERVER: Accepting on port %d\n",portno);
-      newsockfd = accept(sockfd, 
-			 (struct sockaddr *) &cli_addr, 
+      newsockfd = accept(sockfd,
+			 (struct sockaddr *) &cli_addr,
 			 &clilen);
       if (newsockfd < 0) { error("ERROR on accept");}
+      SocketActive = true;
 
-      // Reading the incoming stream
-      bzero(buffer,256);
-      NumberBytesRead = read(newsockfd,buffer,255);
-      if (NumberBytesRead < 0) error("ERROR reading from socket");
-      std::string Command(buffer);
-      std::cout << "COMMAND : " << Command << std::endl;
-
-      // Chop the incoming stream
-      std::istringstream f(Command);
-      std::string s;    
-      int i = 0;
-      std::vector<std::string> words;
-      while (getline(f, s,' '))
+      while (SocketActive)
 	{
-	  std::cout << "[" << i << "]" << s << std::endl;
-	  words.push_back(s);
-	  i++;
-	}
-
-      std::cout << std::endl;
-
-      // Once received, we deal with the data
-      if (strcmp(words[0].c_str(),"CAMERA_MOTOR_CONTROL") ==0)
-	{
-	  // ---> CAMERA_MOTOR_CONTROL H V
-	  std::string LVAL = words[1];
-	  std::string RVAL = words[2];
-	  std::cout << "\rL : " << LVAL << std::endl;
-	  std::cout << "\rR : " << RVAL << std::endl;
 	  
-	  std::cout << "SERVER: Writing back: " << LVAL.c_str() << std::endl;
-	  send(newsockfd , LVAL.c_str() , LVAL.size() , 0);
+	  // Reading the incoming stream
+	  bzero(buffer,MAX_BUFF);
+	  NumberBytesRead = recv(newsockfd,buffer,MAX_BUFF,0);
+	  std::cout << "Number bytes read : " << NumberBytesRead << std::endl;
+	  if (NumberBytesRead <0)
+	    {
+	      fprintf(stderr, "recv: %s (%d)\n", strerror(errno), errno);
+	      SocketActive = false;
+	    } else {
+	    
+	    std::string Command(buffer);
+	    std::cout << "COMMAND : " << Command << std::endl;
+	    // Chop the incoming stream (with white spaces)
+	    std::istringstream f(Command);
+	    std::string s;
+	    int i = 0;
+	    std::vector<std::string> words;
+	    while (getline(f, s,' '))
+	      {
+		std::cout << "[" << i << "]" << s << std::endl;
+		words.push_back(s);
+		i++;
+	      }
+	    
+	    std::cout << "Number of words: " << i-1 << std::endl;
+	    
+	    // Once received, we deal with the data
+	    // Flags
+	    std::string Response = "NOK";
+	    
+	    /* // Get the MODULE name */
+	    /* if (strcmp(words[0].c_str(),"LED") ==0) */
+	    /* 	{ */
+	    
+	    /* 	  // Once received, we deal with the data */
+	    /* 	  if (strcmp(words[1].c_str(),"SET") == 0) */
+	    /* 	    { */
+	    
+	    /* 	      // ---> CAMERA_MOTOR_CONTROL H V */
+	    /* 	      std::string LED_NUMBER = words[2]; // Horizontal */
+	    /* 	      std::string LED_VALUE  = words[3]; // Vertical */
+	    /* 	      std::cout << "*** ACTIVATING LEDS ***" << LED_NUMBER << std::endl; */
+	    /* 	      std::cout << "\tLED NUMBER : " << LED_NUMBER << std::endl; */
+	    /* 	      std::cout << "\tLED VALUE : "  << LED_VALUE << std::endl; */
+	    /* 	      Response = "OK"; */
+	    
+	    /* 	    } */
+	    /* 	} */
+	    
+	    // Write the confirmation back
+	    std::cout << "SERVER: Writing Confirmation" << std::endl;
+	    send(newsockfd , Response.c_str(), Response.size() , 0);
+	  }
 	  
-	} else
-	{
-	  std::cout << "COMMAND NOT FOUND" << std::endl;
 	}
-
-      // Close the accepting file descriptor
-      close(newsockfd);
-      
     }
+
+  // Close the accepting file descriptor
+  close(newsockfd);
 
   close(sockfd);
   return 0; 
